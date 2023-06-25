@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="lemonade">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1b551efcfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <!-- Header begins -->
+    <header>
+      <div class="navbar bg-base-100 bg-slate-100">
+        <a
+          href="./index.html"
+          class="btn btn-ghost normal-case text-xl font-bold text-orange-700 ml-20"
+        >
+          <i class="fa fa-home"></i> Home</a
+        >
+      </div>
+    </header>
+    <!-- ./Header ends -->
+
+    <!-- Main begins -->
+    <main>
+      <h1 class="text-3xl text-center mt-5 font-bold text-orange-700">
+        All Blog Posts
+      </h1>
+      <article
+        class="md:w-[80%] md:mx-auto bg-blue-100 my-6 border-l-4 border-orange-600 text-orange-700 p-4 rounded"
+      >
+        <h1 class="text-2xl font-bold mb-8">
+          <span class="text-blue-600">(1) Question:</span>
+          What is DOM and what is the purpose of DOM ?
+        </h1>
+        <img src="./images/dom-tree-example.png" alt="dom tree" class="mb-8" />
+        <h4 class="font-bold text-center mb-8">
+          <i class="fa fa-arrow-up"></i> DOM Tree in a glimpse
+        </h4>
+        <p class="ml-10">
+          <span class="text-blue-600 font-bold"> Answer:</span>
+          DOM stands for Document Object Model. Dom is a World Wide Web
+          Consortium web standard which defines the standard for accessing
+          documents on web sites.
+        </p>
+        <h3 class="font-bold ml-10 underline">
+          There are three standard parts of DOM
+        </h3>
+        <ol class="ml-14 list-decimal font-bold">
+          <li>
+            <span class="font-bold">Core DOM -</span> It is a standard model for
+            all types of documents on the web pages.
+          </li>
+          <li>
+            <span class="font-bold">XML DOM -</span> It is a standard model for
+            all types of XML documents on the web pages.
+          </li>
+          <li>
+            <span class="font-bold">HTML DOM -</span> It is a standard model for
+            all types of HTML documents on the web pages.
+          </li>
+        </ol>
+
+        <span class="font-bold ml-10"
+          >HTML DOM in short - is a set of standard to get, add, change and
+          delete HTML elements on web pages.</span
+        >
+      </article>
+
+      <article
+        class="md:w-[80%] md:mx-auto bg-blue-100 my-6 border-l-4 border-orange-600 text-orange-700 p-4 rounded"
+      >
+        <h1 class="text-2xl font-bold">
+          <span class="text-blue-600">(2) Question:</span>
+          How will you select html elements using DOM ? Name the DOM methods ?
+        </h1>
+        <p class="ml-10">
+          <span class="text-blue-600 font-bold"> Answer:</span>
+          There are six methods of selecting DOM elements in HTML using
+          JavaScript.
+        </p>
+        <ol class="ml-14 list-decimal font-bold">
+          <li>
+            <span class="font-bold">getElementById() -</span> It is a method to
+            access HTML elements on the web pages.
+          </li>
+          <li>
+            <span class="font-bold">getElementsByTagName() -</span> It is a
+            method to access HTML elements with tag names on the web pages.
+          </li>
+          <li>
+            <span class="font-bold">getElementsByClassName() -</span> It is a
+            method to access HTML elements with class names on the web pages.
+          </li>
+          <li>
+            <span class="font-bold">getElementsByName() -</span> It is a method
+            to access HTML elements with tag names on the web pages.
+          </li>
+          <li>
+            <span class="font-bold">querySelector() -</span> It is a standard
+            model that returns the first element that matches the specified
+            selector.
+          </li>
+          <li>
+            <span class="font-bold">querySelectorAll() -</span> It is a standard
+            model that returns elements that match the specified selector.
+          </li>
+        </ol>
+      </article>
+
+      <article
+        class="md:w-[80%] md:mx-auto bg-blue-100 my-6 border-l-4 border-orange-600 text-orange-700 p-4 rounded"
+      >
+        <h1 class="text-2xl font-bold">
+          <span class="text-blue-600">(3) Question:</span>
+          What is event bubble ?
+        </h1>
+        <img src="./images/event-bubble.png" alt="dom tree" class="mb-8" />
+        <p class="ml-10">
+          <span class="text-blue-600 font-bold"> Answer:</span>
+          In DOM Document Object Model- Event Bubbling happens when an element
+          receives an event, and that event bubbles upward or better it to say
+          the event propagates up to its parent and ancestor elements in the DOM
+          tree until it reaches to the root element of the DOM it is included
+          in. The picture above will give a visual glimpse of the idea of event
+          bubbling in JavaScript.
+        </p>
+        <ol class="ml-14 list-decimal font-bold mt-5">
+          <li>
+            <span class="font-bold">stopPropagation()-</span> It stops event
+            bubbling.
+          </li>
+          <li>
+            <span class="font-bold">stopImmediatePropagation() -</span> In the
+            stopImmediatePropagation() method the method prevents other
+            listeners of the same event from being called further.
+          </li>
+          <li>
+            <span class="font-bold">Event Bubble -</span> Propagates upward to
+            its parent as has been shown in the picture.
+          </li>
+          <li>
+            <span class="font-bold">Event capture -</span> Propagates downward
+            as has been shown in the picture.
+          </li>
+        </ol>
+      </article>
+
+      <article
+        class="md:w-[80%] md:mx-auto bg-blue-100 my-6 border-l-4 border-orange-600 text-orange-700 p-4 rounded"
+      >
+        <h1 class="text-2xl font-bold">
+          <span class="text-blue-600">(4) Question:</span>
+          What is a callback function and why will you use it ?
+        </h1>
+        <img
+          src="./images/Screenshot 2023-02-18 130809.png"
+          alt="callback"
+          class="mb-8 mt-5 md:w-[100%] rounded"
+        />
+        <p class="ml-10">
+          <span class="text-blue-600 font-bold"> Answer:</span>
+          A callback function is a function passed as a parameter of another
+          function. This allows a function to call a function back or later when
+          the former finishes. When Callbacks are used, they make sure that a
+          function is not going to run before a task is completed but will run
+          right after the task has completed. In this way the callback functions
+          helps developers/ programmers to develop asynchronous JavaScript code
+          and keep the code safe from various problems and errors that comes in
+          the way of their coding. In the picture above the the callback
+          function will be called after 1 second of the setTimeout() function
+          finishes its execution. it is an an example of asynchronous behaviour
+          of JavaScript.
+        </p>
+      </article>
+    </main>
+    <!-- ./Main ends -->
+
+    <!-- Footer begins -->
+    <footer>
+      <div class="grid grid-cols-1 col-span-1 bg-slate-800 text-white p-2">
+        <span class="text-center">
+          &copy; 2023 All rights reserved to geometric calculations
+        </span>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+  </body>
+</html>
